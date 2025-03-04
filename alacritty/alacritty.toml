@@ -1,0 +1,75 @@
+[window]
+
+opacity = 0.9
+
+
+padding.x = 50
+padding.y = 15
+
+dynamic_padding = true
+
+decorations = "Full"
+decorations_theme_variant = "Dark" #
+
+[font]
+
+normal.family = "Monospace"
+bold.family = "Monospace"
+italic.family = "Monospace"
+bold_italic.family = "Monospace"
+
+size = 13.0
+
+# BEGIN WAL
+[colors.primary]
+background = '#020103'
+foreground = '#d8a8e3'
+
+[colors.cursor]
+text   = '#020103' # Apply background color to color of text inside cursor
+cursor = '#d8a8e3' # Apply foreground color to color of cursor
+
+[colors.vi_mode_cursor]
+text    = '#020103' # Same as above
+cursor  = '#d8a8e3'
+
+[colors.search.matches]
+foreground = '#020103' # Same as above
+background = '#d8a8e3' # Apply bright/white color to bg color of matching search
+
+[colors.search.focused_match]
+foreground = 'CellBackground'
+background = 'CellForeground'
+
+[colors.line_indicator]
+foreground = 'None'
+background = 'None'
+
+[colors.footer_bar]
+foreground = '#97759e'
+background = '#d8a8e3'
+
+[colors.selection]
+text       = 'CellBackground'
+background = 'CellForeground'
+
+[colors.normal]
+black   = '#020103'
+red     = '#3E2F83'
+green   = '#4C3591'
+yellow  = '#5B3CA1'
+blue    = '#5E48A4'
+magenta = '#7850C7'
+cyan    = '#965ADD'
+white   = '#d8a8e3'
+
+[colors.bright]
+black   = '#97759e'
+red     = '#3E2F83'
+green   = '#4C3591'
+yellow  = '#5B3CA1'
+blue    = '#5E48A4'
+magenta = '#7850C7'
+cyan    = '#965ADD'
+white   = '#d8a8e3'
+# END WAL

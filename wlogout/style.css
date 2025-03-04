@@ -1,0 +1,90 @@
+/* Importiere die waybar Farbvariablen */
+
+/* Globaler Stil */
+* {
+    background-image: none;
+    font-size: 20px;
+}
+
+@import "/home/stb/.cache/wal/colors-waybar.css";
+
+/* Fenster-Stil */
+window {
+    background-color: transparent;
+}
+
+/* Button-Stil */
+button {
+    color: @foreground; /* Verwende die Farbvariablen aus waybar.css */
+    background-color: @background;
+    outline-style: none;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    animation: gradient_f 20s ease-in infinite;
+}
+
+/* Fokus-Effekt für Buttons */
+button:focus {
+    background-color: @color9;
+    background-size: 30%;
+}
+
+/* Hover-Effekte für Buttons */
+button:hover {
+    background-color: @color11;
+    background-size: 40%;
+    border-radius: 10px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682);
+}
+
+/* Hover-Effekte für die Schaltflächen */
+button:hover#lock {
+    border-radius: 10px;
+    margin: 10px 0px 10px 10px;
+}
+
+button:hover#logout {
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+button:hover#shutdown {
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+button:hover#reboot {
+    border-radius: 10px;
+    margin: 10px 10px 10px 0px;
+}
+
+/* Schaltflächen-Stile für Shutdown, Lock, Logout und Reboot */
+#lock {
+    background-image: url("/home/stb/.config/wlogout/icons/lock.png");
+    border-radius: 10px 0px 0px 10px;
+    margin: 10px 0px 10px 10px;
+}
+
+#logout {
+    background-image: url("/home/stb/.config/wlogout/icons/logout.png");
+    border-radius: 0px 0px 0px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+#shutdown {
+    background-image: url("/home/stb/.config/wlogout/icons/shutdown.png");
+    border-radius: 0px 0px 0px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+#reboot {
+    background-image: url("/home/stb/.config/wlogout/icons/reboot.png");
+    border-radius: 0px 10px 10px 0px;
+    margin: 10px 10px 10px 0px;
+}
